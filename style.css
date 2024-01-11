@@ -1,28 +1,24 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-header{
+header {
+    padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 10%;
+    background-color: #131313;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-}
-
-.nav {
-    padding: 0 1vh;
-    background-color: #131313;
-    color: #ffffff;
-    height: 30%;
-    width: 100%; /* for styling purposes */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .nav-links {
@@ -33,179 +29,47 @@ body {
     justify-content: space-around;
 }
 
-.nav a {
+.nav-links a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.nav-title {
-    margin-left: 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-img {
-    margin-top: 0%;
-    display: flex;
-}
-
-
-h1{ font-size: 2.5em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
-
-button{
+p,
+li {
     font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: rgb(0, 0, 0);
 }
 
-button:hover{
-    background-color: rgb(5, 3, 7);
+li {
+    list-style: none;
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: auto;
 }
 
-.color-acento{ color:rgb(0, 0, 0); }
-
-header{
-    background-color: rgb(245,245,245);
-    top: 0;
-}
-
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    font-size: 1.6em;
-}
-
-header .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover{
-    color: blueviolet;
-}
-
-#hero{
-    display: flex;
+#hero {
+    padding: 1vh 0;
     margin-top: 100px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-color: #111111;
 }
 
-#hero h1{
-    color: white;
-}
-
-#hero button{
-    font-size: 1.75em;
-}
-
-#j-y-m .container{
-    text-align: center;
-    padding: 200px 12px;
-}
-
-#nuestros-programas{
-    background-color: rgb(30,30,30);
+#nuestros-programas {
+    background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
 }
 
-#nuestros-programas .container{
+#nuestros-programas .container {
     padding: 150px 12px;
-}
-
-#nuestros-programas h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#nuestros-programas p{
-    display: none;
-}
-
-#nuestros-programas .carta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-}
-
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/front-end.jpg");
-
-}
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/full-stack.jpg");
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/python.jpg");
-
 }
 
 .social-media {
     width: 30vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 5vh;
 }
 
 .card {
@@ -228,31 +92,34 @@ header a:hover{
 
 .contacto {
     text-align: left;
-    height: 15vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 3vh;
 }
 
-.box {
-    margin-bottom: 4vh;
-}
-
-.box:last-child {
-    margin: 0;
+.contacto ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
 
 .horario {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
 }
 
 .horario h2 {
     margin-right: 1vh;
 }
 
-.problemas h2{
+.horario p {
+    transform: translateY(2vh);
+}
+
+.problemas h2 {
     margin-bottom: 4vh;
 }
 
@@ -262,120 +129,112 @@ header a:hover{
     align-items: center;
 }
 
-#caracteristicas .container{
-    text-align: center;
-    padding: 250px 12px;
+#caracteristicas {
+    width: 100%;
+    height: 57vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
 }
 
-#caracteristicas li{
-    margin: 16px 0px;
-    font-weight: bold;
+#caracteristicas .container {
+    margin: 0;
+    height: 100%;
+    width: 50%;
 }
 
-#final{
+#caracteristicas .container:first-child {
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(30,30,30);
-    color: white;
-    height: 80vh;
+    align-items: end;
+    gap: 3vh;
 }
 
-footer{
-    background-color: rgb(230,230,230);
-}
-
-footer p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100,100,100);
-}
-
-footer .container{
-    height: 150px;
+#caracteristicas .container:last-child {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    gap: 2vh;
 }
 
-@media (min-width: 850px){
-    header{
-        position: fixed;
-        top: 0;
-        width: 100%;
+#caracteristicas .container h2 {
+    margin-top: 10%;
+    transform: translateX(-16vh);
+}
+
+#caracteristicas .container ul {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#flyer2 {
+    height: 100%;
+    width: 40vh;
+}
+
+#final {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 45vh;
+    gap: 4vh;
+}
+
+.box {
+    margin-top: 3vh;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+@media (min-width: 850px) {
+    #j-y-m {
+        padding: 1vh 0;
     }
 
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #hero h1{
-        font-size: 5em;
-    }
-
-    #j-y-m .container{
+    #j-y-m .container {
+        padding: 150px 0;
         display: flex;
         justify-content: space-evenly;
     }
 
-    #j-y-m .texto{
+    .problemas {
         width: 50%;
         max-width: 600px;
         text-align: initial;
-        padding-left: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    #j-y-m h2{
+    .problemas h2 {
         margin-top: 0px;
     }
 
-    #nuestros-programas .programas{
+    #nuestros-programas .programas {
         margin-top: 3vh;
         display: flex;
         justify-content: center;
     }
-
-    #nuestros-programas p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestros-programas h2{
-        font-size: 4em;
-    }
-
-    #nuestros-programas h3{
-        margin-top: 0;
-    }
-
-    #caracteristicas{
-        background-image: url("media/background-2.jpeg");
-        background-repeat: no-repeat;
-        background-size: 500px 400px;
-        background-position: calc(100vw - 500px) 120px;
-    }
-
-    #caracteristicas .container{
-        text-align: initial;
-    }
-
-    #caracteristicas ul{
-        margin-left: 100px;
-    }
-
-    footer .container{
-        justify-content: flex-end;
-    }
 }
 
 @media (max-width: 850px) {
-    #nuestros-programas .programas{
+    #nuestros-programas .programas {
         margin-top: 3vh;
         display: flex;
         flex-direction: column;
@@ -397,7 +256,7 @@ footer .container{
         margin-top: 5vh;
     }
 
-   .nav-links {
+    .nav-links {
         display: none;
     }
 
@@ -409,54 +268,12 @@ footer .container{
 }
 
 @media (min-width: 1200px) {
-    #caracteristicas{
+    #caracteristicas {
         background-position-x: calc(100vw - 800px);
     }
-}
-
-#carousel-container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    border: 2px solid #ddd;
-}
-
-#image-container {
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
-    display: flex;
 }
 
 .carousel-image {
     width: 100%;
     flex: 0 0 auto;
-}
-
-#prev, #next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-#prev {
-    left: 0;
-}
-
-#next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-#prev:hover, #next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
