@@ -1,7 +1,7 @@
 let services = document.querySelector('.programas');
 
 /*
- * En caso de querer agrregar mas servicion en el futuro
+ * En caso de se quisiera agrregar mas servicion en el futuro
  * Agregue un nuevo Objeto JS con el nombre del servicio en la etiqueta title
  * y la ruta de la imagen en la etiqueta img
  * Ejemplo:
@@ -13,11 +13,11 @@ let services = document.querySelector('.programas');
 
 let cards = [
     {
-        title: 'Scanner',
+        title: 'Diagnostico Con Scanner',
         img: './img/scanner.jpeg'
     },
     {
-        title: 'Cambio de aceite',
+        title: 'Cambios de aceite',
         img: './img/Cambio_aceite.jpeg'
     },
     {
