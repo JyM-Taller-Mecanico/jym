@@ -9,6 +9,7 @@ let services = document.querySelector('.programas');
  *     title: 'Nuevo servicio',
  *     img: 'Ruta de la imagen'
  * }
+ * Si
 */
 
 let cards = [
