@@ -1,7 +1,7 @@
 let services = document.querySelector('.programas');
 
 /*
- * En caso de se quisiera agrregar mas servicion en el futuro
+ * En caso de se quisiera agregar mas servicios en el futuro
  * Agregue un nuevo Objeto JS con el nombre del servicio en la etiqueta title
  * y la ruta de la imagen en la etiqueta img
  * Ejemplo:
