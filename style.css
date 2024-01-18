@@ -4,16 +4,14 @@
 }
 
 header {
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 10%;
+    height: 8vh;
     background-color: #131313;
     color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    z-index: 10;
 }
 
 body {
@@ -48,39 +46,16 @@ li {
     margin: auto;
 }
 
-#hero {
-    padding: 1vh 0;
-    margin-top: 100px;
-    height: 90vh;
-    background-color: #111111;
-}
-
-#nuestros-programas {
-    background-color: rgb(30, 30, 30);
-    color: white;
-    text-align: center;
-}
-
-#nuestros-programas .container {
-    padding: 150px 12px;
-}
-
-.social-media {
-    width: 30vh;
-    display: flex;
-    align-items: center;
-    gap: 5vh;
-}
-
 .card {
-    background-color: #131313;
-    padding: 13px;
-    margin-right: 5vh;
-    border-radius: 10px;
-}
-
-.card:last-child {
-    margin: 0;
+    padding: 25px 10px 10px 10px;
+    width: 25vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #363636;
+    gap: 5px;
 }
 
 .card-title {
@@ -88,6 +63,23 @@ li {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    word-wrap: normal;
+}
+
+.card-img {
+    border-radius: 10px;
+}
+
+.programas {
+    display: flex;
+    gap: 5vh;
+}
+
+.social-media {
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    gap: 5vh;
 }
 
 .contacto {
@@ -119,77 +111,38 @@ li {
     transform: translateY(2vh);
 }
 
-.problemas h2 {
-    margin-bottom: 4vh;
-}
-
 .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#caracteristicas {
-    width: 100%;
-    height: 57vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-}
-
-#caracteristicas .container {
-    margin: 0;
-    height: 100%;
-    width: 50%;
-}
-
-#caracteristicas .container:first-child {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    gap: 3vh;
-}
-
-#caracteristicas .container:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-}
-
-#caracteristicas .container h2 {
-    margin-top: 10%;
-    transform: translateX(-16vh);
-}
-
-#caracteristicas .container ul {
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-#flyer2 {
-    height: 100%;
-    width: 40vh;
+#nuestros-programas {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
 }
 
 #final {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    text-align: center;
     background-color: rgb(30, 30, 30);
     color: white;
     height: 45vh;
-    gap: 4vh;
+}
+
+.problemas {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.problemas h2 {
+    margin-bottom: 5%;
 }
 
 .box {
     margin-top: 3vh;
+    display: flex;
 }
 
 footer {
@@ -202,19 +155,194 @@ footer p {
     color: rgb(100, 100, 100);
 }
 
-@media (min-width: 850px) {
+@media screen and (min-width: 801px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nuestros-programas {
+        background-color: rgb(30, 30, 30);
+        color: white;
+        text-align: center;
+    }
+    
+    #nuestros-programas .container {
+        padding: 150px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
     #j-y-m {
-        padding: 1vh 0;
+        height: 37rem;
+        display: flex;
+        align-items: center;
     }
 
     #j-y-m .container {
-        padding: 150px 0;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    #hero {
+        padding: 1vh 0;
+        margin-top: 45px;
+        height: 90vh;
+        background-color: #111111;
+    }
+
+    #caracteristicas {
+        width: 100%;
+        height: 57vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    #caracteristicas .container h2 {
+        margin-top: 10%;
+        transform: translateX(-16vh);
+    }
+    
+    #caracteristicas .container ul {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    #caracteristicas .container {
+        margin: 0;
+        height: 100%;
+        width: 50%;
+    }
+    
+    #caracteristicas .container:first-child {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 3vh;
+    }
+    
+    #caracteristicas .container:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    #flyer2 {
+        height: 100%;
+        width: 40vh;
+    }
+
+    #final {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        gap: 4vh;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    header {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5rem;
+    }
+
+    #j-y-m {
+        margin-top: 12vh;
+        height: 37rem;
+        display: flex;
+        align-items: center;
+    }
+
+    #j-y-m .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    #nuestros-programas .container {
+        padding: 150px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #caracteristicas {
+        width: 100%;
+        height: 57vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #caracteristicas .container {
+        width: 90%;
+    }
+
+    #caracteristicas .container:first-child {
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(5px);
+    }
+
+    #caracteristicas .container:last-child {
         display: flex;
         justify-content: space-evenly;
     }
 
+    #flyer2 {
+        height: 250px;
+    }
+
+    #hero {
+        padding: 1vh 0;
+        margin-top: 80px;
+        height: 20vh;
+        width: 100%;
+        display: none;
+        background-color: #111111;
+    }
+
+    #final {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        gap: 4vh;
+    }
+
+    .j-y-m-img {
+        width: 300px;
+    }
+
     .problemas {
-        width: 50%;
+        width: 90%;
         max-width: 600px;
         text-align: initial;
         display: flex;
@@ -223,37 +351,17 @@ footer p {
     }
 
     .problemas h2 {
+        font-size: 2vh;
         margin-top: 0px;
     }
 
-    #nuestros-programas .programas {
-        margin-top: 3vh;
-        display: flex;
-        justify-content: center;
+    .problemas p {
+        font-size: 2vh;
     }
-}
 
-@media (max-width: 850px) {
-    #nuestros-programas .programas {
-        margin-top: 3vh;
-        display: flex;
+    .programas {
+        display: flex; 
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card {
-        margin: 0;
-        margin-top: 5vh;
-        width: 25vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card:last-child {
-        margin-top: 5vh;
     }
 
     .nav-links {

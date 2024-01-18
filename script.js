@@ -18,7 +18,7 @@ let cards = [
         img: './img/scanner.jpeg'
     },
     {
-        title: 'Cambios de aceite',
+        title: 'Cambios de Aceite',
         img: './img/Cambio_aceite.jpeg'
     },
     {
@@ -33,7 +33,7 @@ services.innerHTML = cards.map(card => {
             <label class="card-title">
                 <h3>${card.title}</h3>
             </label>
-            <img src="${card.img}" width="200" alt="${card.title}">
+            <img src="${card.img}" class="card-img" width="100%" alt="${card.title}">
         </div>
     `;
 }).join('');
